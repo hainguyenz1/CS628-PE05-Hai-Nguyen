@@ -1,0 +1,138 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Light background color */
+  color: #333; /* Dark text color for contrast */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column; /* Stack navigation and content vertically */
+  min-height: 100vh;
+}
+
+nav {
+  background-color: #333; /* Darker navigation bar */
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Arrange list items horizontally */
+  justify-content: center; /* Center the navigation links */
+}
+
+nav li {
+  margin: 0 1rem; /* Space between list items */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem; /* Add padding to the links */
+  border-radius: 5px; /* Slightly rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+nav a:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* Main Content Area */
+main {
+  flex: 1; 
+  padding: 2rem;
+  background-color: #fff; /* White content background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 20px; /* Add margin around main content */
+  border-radius: 8px; /* Rounded corners for main content */
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd; /* Add a line under the heading */
+  padding-bottom: 0.5rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* Arrange form elements vertically */
+  max-width: 400px;
+  margin: 0 auto; /* Center the form */
+}
+
+label {
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack navigation links vertically on smaller screens */
+    align-items: center; /* Center the links */
+  }
+
+  nav li {
+    margin: 0.5rem 0; /* Adjust margin for vertical stacking */
+  }
+
+  main {
+      margin: 10px;
+      padding: 1rem;
+  }
+
+  form {
+      max-width: 90%; /* Make form wider on smaller screens */
+  }
+
+}
